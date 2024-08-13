@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border On Empty Cells</title>
+    <style type="text/css">
+        td {
+            border: 1px solid #0088dd;
+            padding: 15px;
+        }
+        table {
+            max-width: 200px;
+            min-width: 100px;
+            display: inline-block; /* This makes the tables sit next to each other */
+            vertical-align: top; /* Aligns the tables to the top */
+            margin-right: 20px; /* Optional: Adds space between the tables */
+        }
+        table.one {
+            empty-cells: show;
+        }
+        table.two {
+            empty-cells: hide;
+        }
+        td {
+            border: 2px solid #000000;
+            padding: 15px;
+            background-color: #0088dd;
+        }
+        table.three {
+            margin-top: 10px;
+            border-spacing: 5px 15px;
+            margin-top: 10px;
+        }
+        table.four {
+            border-collapse: border-collapse: ;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="one">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="two">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="three">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="four">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

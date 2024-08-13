@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .square {
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .square1 .overlay1 {
+            background-color: #ff007f;
+            z-index: 1;
+        }
+        .square1 .overlay2 {
+            background-color: #333333;
+            z-index: 0;
+            top: 50px; /* Adjust this value for desired overlap */
+            left: 50px; /* Adjust this value for desired overlap */
+        }
+        .square2 .overlay1 {
+            background-color: #ff007f;
+            z-index: 1;
+        }
+        .square2 .overlay2 {
+            background-color: #333333;
+            z-index: 0;
+            top: 50px; /* Adjust this value for desired overlap */
+            left: 50px; /* Adjust this value for desired overlap */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square square1">
+            <div class="overlay overlay1"></div>
+            <div class="overlay overlay2"></div>
+        </div>
+        <div class="square square2">
+            <div class="overlay overlay1"></div>
+            <div class="overlay overlay2"></div>
+        </div>
+    </div>
+</body>
+</html>

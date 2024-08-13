@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin:0
+        }
+        .form-container {
+            display: flex;
+            flex-direction: colum;
+            align-items: flex-start;
+        }
+
+        form {
+            background-color: bisque;
+        }
+        .form-group {
+            margin: 10px 0;
+            display: flex;
+            align-items: center; /* Align label and input vertically */
+        }
+
+        .form-group label {
+            margin-right: 10px;
+            min-width: 80px; /* Adjust width based on your preference */
+            text-align: right;
+        }
+
+        .form-group input {
+            flex-grow: 1; /* Input takes up remaining space */
+            max-width: 200px;
+        }
+
+        .radio-buttons {
+            margin: 10px 0;
+            display: flex;
+            align-items: right;
+        }
+
+        .radio-buttons .title {
+            margin-right: 10px;
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .submit {
+            margin-top: 10px;
+            margin-left: 230px;
+            display: flex;
+            justify-content: flex-start;
+            cursor: move;
+
+        }
+
+        .submit input {
+            max-width: 200px; /* Same width as input boxes */
+            cursor: pointer;
+          
+        }
+
+    
+    </style>
+</head>
+<body>
+    <form action="example.php" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div class="radio-buttons">
+            <span class="title">Gender:</span>
+            <input type="radio" name="gender" id="male" value="M"/>
+            <label for="male">M</label>
+            <input type="radio" name="gender" id="female" value="F"/>
+            <label for="female">F</label>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Register" id="submit" />
+        </div>
+    </form>
+
+</body>
+</html>

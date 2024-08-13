@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical align</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images horizontally */
+            row-gap: 10px;            
+        }
+
+        h1 {
+            margin-left: 125px;
+        }
+
+        .image-text {
+            display: flex;
+            align-items: flex-start; /* Align items to the start (top) */
+            justify-content: flex-end; /* Align items to the end (right) */
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <h1> Briard Life Stages</h1>
+    <div class="image-text">
+        <img src="images/six-months.gif">
+        <span>Six months</span>
+    </div>
+    <div class="image-text">
+        <img src="images/one-year.gif">
+        <span>One year</span>
+    </div>
+    <div class="image-text">
+        <img src="images/two-years.gif">
+        <span>Two years</span>
+    </div>
+</div>
+
+</body>
+</html>

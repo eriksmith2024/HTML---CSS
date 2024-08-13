@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+    * {
+        font-family: Arial, Verdana, sans-serif;
+        color: #665544;
+        padding: 10px;
+    }
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input {
+        border-bottom: 1px dotted #dcdcdc;
+        border-top: solid;
+        padding: 5px;
+        width: 300px;
+        margin-bottom: 20px; 
+    }   
+
+    input:focus {
+        border: 1px solid #1e0606;
+        outline: #333333;
+    }
+
+    legend {
+        background-color: #efefef;
+        border:1px solid #dcdcdc;
+        border-radius: 10px;
+        padding: 5px 20px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    label {
+        width: auto; /* Remove fixed width */
+        padding-left: 0;
+        padding-right: 10px; /* Add some space between label and input */
+        margin-bottom: 0; /* Remove the margin to get closer alignment */
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 400px; /* Adjust the width as needed */
+        margin-bottom: 0; /* Remove margin */
+    }
+
+    input#submit {
+        color: #444444;
+        text-shadow: 0px 1px 1px #ffffff;
+        border-bottom: 2px solid #b2b2b2;
+        background-color: #b9e4e3;
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        padding-bottom: 5px;
+    }
+
+    input#submit:hover {
+        color: #333333;
+        border: 1px solid #a4a4a4;
+        border-top: 2px solid #b2b2b2;
+        background-color: #a0dbc4;
+    }
+
+    fieldset {
+        width: 300px;
+        border: 1px solid #dcdcdc;
+        border-radius: 10px;
+        padding:20px;
+        text-align: left;
+        margin: auto;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 5px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Newsletter</legend>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name"/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email"/>
+            </div>
+            <input type="submit" value="Subscribe" id="submit"/>
+        </fieldset>
+    </form>
+</body>
+</html>

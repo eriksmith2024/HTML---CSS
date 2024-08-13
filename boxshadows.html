@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering Content Footer Inline Block etc</title>
+    <style type="text/css">
+     
+        ul {
+            list-style-type: none; /* Removes the default bullet points */
+            padding: 0;
+            margin: 20px auto; /* Centers the list horizontally */
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        li.coming-soon {
+            visibility: hidden;
+        }
+
+        /* Sticky footer styles */
+        .footer {
+            margin-top: 400px;
+        }
+
+        p {
+			width: 100px;
+			height: 100px;
+			background-color: #e1ddda;
+			margin: 20px;
+			display: inline-block;
+        }
+
+        p.one {
+            -moz-box-shadow: -5px -5px #777777;
+            -webkit-box-shadow: -5px -5px #777777;
+            box-shadow: -5px -5px #777777;
+        }
+
+        p.two {
+            -moz-box-shadow: 5px 5px 5px #777777;
+            -webkit-box-shadow: 5px 5px 5px #777777;
+            box-shadow: 5px 5px 5px #777777;
+        }
+        p.three {
+            -moz-box-shadow: 5px 5px 5px 5px #777777;
+            -webkit-box-shadow: 5px 5px 5px 5px #777777;
+            box-shadow: 5px 5px 5px 5px #777777;
+        }
+        p.four {
+            -moz-box-shadow: 0px 0px 10px #777777;
+            -webkit-box-shadow: 0px 0px 10px #777777;
+            box-shadow: 0px 0px 10px #777777;
+        }
+        p.five {
+            -moz-box-shadow: inset 0px 0px 10px #777777;
+            -webkit-box-shadow:inset  0px 0px 10px #777777;
+            box-shadow: inset 0px 0px 10px #777777;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<p class="one"></p>
+<p class="two"></p>
+<p class="three"></p>
+<br>
+<p class="four"></p>
+<p class="four"></p>
+
+
+
+<div class="footer">
+    <ul>
+        <li>Home</li>
+        <li>Product</li>
+        <li class="coming-soon">Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+</body>
+</html>
